@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Travel from "./Travel"
+import Travels from "./Travels"
 
 class App extends Component {
   render() {
@@ -12,19 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My travels</h1>
         </header>
-        <Travel
-          destination="Cancun"
-          country="Mexico"
-          photo="https://media-cdn.tripadvisor.com/media/photo-s/11/c7/d1/39/club-med-cancun-yucatan.jpg"
-          distance="8254km"
-        />
-        <Travel
-          destination="Beijing Jiaotong University"
-          country="China"
-          photo="https://d1gns46gm3ntni.cloudfront.net/institutes/institute9637/bjtu.jpg"
-          distance="8400km"
-        />
-
+        <Travels />
       </div>
     );
   }
